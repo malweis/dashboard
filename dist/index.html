@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,73 @@
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
+
 <body>
     <div class="grid grid-cols-4 grid-rows-4 w-full h-full">
-        <div class="col-start-1 col-end-2 bg-blue-600 row-start-1 row-end-5">aaa</div>
-        <div class="col-start-2 col-end-5 bg-white row-start-1 row-end-2">bbb</div>
-        <div class="col-start-2 col-end-5 bg-gray-600 row-start-2 row-end-5">ccc</div>
+        <div class="col-start-1 col-end-2 bg-blue-600 row-start-1 row-end-5 sidebar flex flex-col items-center gap-4 ">
+
+            <div class="flex-1 border-2 border-red-300 flex flex-col items-center justify-center w-full pt-6">
+                <a href="" class="flex-1">Dashboard</a>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Profile</a></li>
+                    <li><a href="">Messages</a></li>
+                    <li><a href="">History</a></li>
+                    <li><a href="">Task</a></li>
+                    <li><a href="">Communities</a></li>
+                </ul>
+            </div>
+            <div class="flex-1 border-2 border-red-300 flex justify-center pr-6 mb-24 w-full">
+                <ul>
+                    <li><a href="">Setting</a></li>
+                    <li><a href="">Support</a></li>
+                    <li><a href="">Privacy</a></li>
+
+                </ul>
+
+            </div>
+        </div>
+        <div class="col-start-2 col-end-5 bg-white row-start-1 row-end-2 flex flex-col">
+            <div class="flex flex-1">
+                <div>search</div>
+                <div class="flex-1 flex justify-center"> <input type="search" name="" id=""
+                        class="bg-gray-300 rounded-l w-11/12 h-5"></div>
+                <div> data</div>
+            </div>
+            <div class="flex flex-1">
+                <div class="flex-1">UserData</div>
+                <div>
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-start-2 col-end-5 bg-gray-600 row-start-2 row-end-5">
+            <span>Your proyects</span>
+            <div class="grid grid-cols-3 grid-rows-2 w-full h-full">
+                <div class="bg-blue-500 col-start-1 col-end-3 row-start-1 row-end-3 grid grid-cols-2 place-items-center gap-4 mainc">
+                    <div class="bg-white">
+                        <div>
+                            <span>Super cool Proyect</span>
+                            <span> Sed stempus ut lacus ut scelerisgue suspendisse solicitudin</span>
+                        </div>
+
+                    </div>
+                    <div class="bg-white">pro</div>
+                    <div class="bg-white">pro</div>
+                    <div class="bg-white">pro</div>
+                    <div class="bg-white">pro</div>
+                    <div class="bg-white">v </div>
+                </div>
+                <div class="bg-white">
+                    
+                </div>
+                <div class="bg-green-500"> </div>
+            </div>
+
+        </div>
     </div>
 </body>
-</html>
+
+</html>s
