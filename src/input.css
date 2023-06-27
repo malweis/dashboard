@@ -13,6 +13,47 @@ body, html{
     font-family: 'Poppins', sans-serif;
     background: #f2f2f2;
 }
-.mainc{
-    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+.maingrid{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr;
+    grid-template-rows: 1fr 2fr 2fr;
+    grid-template-areas: "sidenav header header header"
+                         "sidenav main main main"
+                         "sidenav main main main" ;
+}
+.sidenav{
+    grid-area: sidenav;
+}
+.header{
+    grid-area: header;
+}
+.main{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "proyectos proyectos anuncios"
+                         "proyectos proyectos trending";
+
+}
+.anuncios{
+    grid-area: anuncios;
+}
+.trending{
+    grid-area: trending;
+}
+.proyectos{
+    grid-area: proyectos;
+}
+.proyecto{
+    display: grid;
+    grid-template-rows: auto 1fr 1fr;    
+}
+.proyectos{
+    display: grid;
+    grid-template-columns:  auto auto ;
+    grid-template-rows: auto auto;
+    gap: 1.5rem;
+
 }
